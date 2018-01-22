@@ -3,21 +3,13 @@
 // event.preventDefault - prevents it from scrolling to top, which is default behavior when clicking on anchor tag 
 // slideToggle to reveal text 
 
-function unhide (){
+function togglestate (){
 	event.preventDefault();
 	$('#show-this-on-click').slideToggle();
 	$('.readless').slideToggle();
 	$('.readmore').slideToggle();
+	console.log('togglestate');
 }
 
-$('.readmore').click(unhide); 
-
-
-function unhide2 (){
-	event.preventDefault();
-	$('#show-this-on-click').slideToggle();
-	$('.readless').slideToggle();
-	$('.readmore').slideToggle();
-}
-
-$('.readless').click(unhide2); 
+$('.readmore').click(togglestate); 
+$('.readless').click(togglestate); 
