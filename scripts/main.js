@@ -5,11 +5,25 @@
 
 function togglestate (){
 	event.preventDefault();
+	console.log('togglestate');
 	$('#show-this-on-click').slideToggle();
 	$('.readless').slideToggle();
 	$('.readmore').slideToggle();
-	console.log('togglestate');
 }
 
-$('.readmore').click(togglestate); 
-$('.readless').click(togglestate); 
+$('.readmore').click(togglestate);
+$('.readless').click(togglestate);
+
+//--------------------------------
+
+function togglestate2 (){
+	event.preventDefault();
+	console.log('togglestate 2');
+	$('#learnmoretext').slideToggle();
+	$('.showless').slideToggle();
+	$('.learnmore').slideToggle();
+
+}
+
+$('.learnmore').click(togglestate2);
+$('.showless').click(togglestate2);
